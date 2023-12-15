@@ -33,3 +33,4 @@ tim_web_show_apps.git
 docker-entrypoint.sh
 */main
 Dockerfile
+cmd/main
