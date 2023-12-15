@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tim Web Show Apps </title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="../static/css/mainview.css" rel="stylesheet">
+
+    <style>
+      .adrline{
+         padding:5px;
+         padding-right:10px;
+      }
+      .notes{
+        font-weight:normal;
+        color:darkbrown
+      }
+      .notesDetails{
+        padding-left:30px;
+        font-weight:normal;
+        color:brown
+      }
+    </style>
+    <!--script src="../static/js/functionsPSCheck.js"></script-->
+</head>
+
+
+
+<body>
+
+
+
+    <div class="topnav">
+        <a class="active" href="#servmon">Tim Web Show Apps</a>
+            
+    </div>
+    <div style="text-align:center; font-size:20px;font-weight:bold;color:darkblue;margin:10px;">Tim Web Show Apps</div>
+    <div style="text-align:left;margin-top: 30px; font-size:15px;font-weight:bold;color:black;margin:10px;">
+    <table> 
+       <tr><td  class="adrline"> Portainer</td><td colspan="2"><a href="http://{{.AppsAddrInfo.SysPortainer.Addr}}:{{.AppsAddrInfo.SysPortainer.Port}}" target="_blank">{{.AppsAddrInfo.SysPortainer.Addr}}:{{.AppsAddrInfo.SysPortainer.Port}} --> {{.AppsAddrInfo.SysPortainer.IntPort}}  </a></td></tr>
+       <tr><td  class="adrline"> Maria-DB</td> <td>{{.AppsAddrInfo.DB.Addr}}:{{.AppsAddrInfo.DB.Port}} --> {{.AppsAddrInfo.DB.IntPort}}</td></tr>
+       <tr><td  class="adrline"> Adminer</td><td colspan="2"><a href="http://{{.AppsAddrInfo.Adminer.Addr}}:{{.AppsAddrInfo.Adminer.Port}}" target="_blank">{{.AppsAddrInfo.Adminer.Addr}}:{{.AppsAddrInfo.Adminer.Port}} --> {{.AppsAddrInfo.Adminer.IntPort}}</a></td></tr>
+       <tr><td  class="adrline"> tim.NumRangeServer</td><td colspan="2"><a href="http://{{.AppsAddrInfo.NumRangeServer.Addr}}:{{.AppsAddrInfo.NumRangeServer.Port}}/NumRangeServices" target="_blank"> {{.AppsAddrInfo.NumRangeServer.Addr}}:{{.AppsAddrInfo.NumRangeServer.Port}} --> {{.AppsAddrInfo.NumRangeServer.IntPort}} /NumRangeServices</a></td></tr>
+       <tr><td  class="adrline"> tim.LogServer</td><td colspan="2"><a href="http://{{.AppsAddrInfo.LogServer.Addr}}:{{.AppsAddrInfo.LogServer.Port}}/index"  target="_blank"> {{.AppsAddrInfo.LogServer.Addr}}:{{.AppsAddrInfo.LogServer.Port}} --> {{.AppsAddrInfo.LogServer.IntPort}} /index </a></td></tr>
+       <tr><td  class="adrline"> tim.Overview</td><td colspan="2"><a href="http://{{.AppsAddrInfo.Overview.Addr}}:{{.AppsAddrInfo.Overview.Port}}/index"> {{.AppsAddrInfo.Overview.Addr}}:{{.AppsAddrInfo.Overview.Port}} --> {{.AppsAddrInfo.Overview.IntPort}} /index</a></td></tr>
+       <tr><td  class="adrline"> tim.MockProducer</td><td colspan="2"><a href="http://{{.AppsAddrInfo.MockProducer.Addr}}:{{.AppsAddrInfo.MockProducer.Port}}/index"  target="_blank"> {{.AppsAddrInfo.MockProducer.Addr}}:{{.AppsAddrInfo.MockProducer.Port}} --> {{.AppsAddrInfo.MockProducer.IntPort}} /index</a></td></tr>
+       <tr><td  class="adrline"> tim.DataReceiver</td><td colspan="2"><a href="http://{{.AppsAddrInfo.Receiver.Addr}}:{{.AppsAddrInfo.Receiver.Port}}/index"  target="_blank"> {{.AppsAddrInfo.Receiver.Addr}}:{{.AppsAddrInfo.Receiver.Port}} --> {{.AppsAddrInfo.Receiver.IntPort}} /index</a></td></tr>
+       <tr><td  class="adrline"> tim.Repo</td><td colspan="2"><a href="http://{{.AppsAddrInfo.Repo.Addr}}:{{.AppsAddrInfo.Repo.Port}}/index" target="_blank">{{.AppsAddrInfo.Repo.Addr}}:{{.AppsAddrInfo.Repo.Port}} --> {{.AppsAddrInfo.Repo.IntPort}} /index </a></td></tr>
+       <!--
+       <tr><td  class="adrline"> DBOrgLogger</td><td class="notes">{ {.AppsAddrInfo.DBOrgLogger.Addr} }/{ {.AppsAddrInfo.DBOrgLogger.Port} }</td><td class="notesDetails">{ {.AppsAddrInfo.DBOrgLogger.Notes} }</td></tr>
+       <tr><td  class="adrline"> DBOrgReceiver</td><td class="notes">{ {.AppsAddrInfo.DBOrgReceiver.Addr} }/{ {.AppsAddrInfo.DBOrgReceiver.Port} }</td><td class="notesDetails">{ {.AppsAddrInfo.DBOrgReceiver.Notes} }</td></tr>
+       <tr><td  class="adrline"> DBOrgRepo</td><td class="notes">{ {.AppsAddrInfo.DBOrgRepo.Addr}}/{ {.AppsAddrInfo.DBOrgRepo.Port} }</td><td class="notesDetails">{ {.AppsAddrInfo.DBOrgRepo.Notes} }</td></tr>
+       -->
+       <tr style="vertical-align: top;"><td  class="adrline" style="vertical-align: top;">tim.DBDef</td><td class="notes">{{.AppsAddrInfo.DBOrga.Addr}}/{{.AppsAddrInfo.DBOrga.Port}}</td><td class="notesDetails">{{.AppsAddrInfo.DBOrga.Notes}} <a href="http://{{.AppsAddrInfo.SysPortainer.Addr}}:{{.AppsAddrInfo.SysPortainer.Port}}" target="_blank">{{.AppsAddrInfo.SysPortainer.Addr}}:{{.AppsAddrInfo.SysPortainer.Port}} --> {{.AppsAddrInfo.SysPortainer.IntPort}} </td></tr>
+     
+    </table>
+    
+   </div>
+
+
+</body>
+
+</html>

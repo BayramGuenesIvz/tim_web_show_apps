@@ -1,0 +1,80 @@
+{
+    "DB":{
+      "Addr":"127.0.0.1",
+      "Port":"33306",
+      "IntPort":"3306",
+      "Notes":""  
+    },
+    "Adminer":  {
+      "Addr":"127.0.0.1",
+      "Port":"18080",
+      "IntPort":"8080",
+      "Notes":""  
+    },
+    "NumRangeServer":  {
+      "Addr":"127.0.0.1",
+      "Port":"17000",
+      "IntPort":"8080",
+      "Notes":""  
+    },
+    "LogServer":{
+      "Addr":"127.0.0.1",
+      "Port":"17050",
+      "IntPort":"18000",
+      "Notes":"" 
+    },
+    "Overview":{
+      "Addr":"127.0.0.1",
+      "Port":"18000",
+      "IntPort":"18000",
+      "Notes":"" 
+    },
+    "MockProducer":{
+      "Addr":"127.0.0.1",
+      "Port":"17100",
+      "IntPort":"8080",
+      "Notes":"" 
+    },
+    "Receiver":{
+      "Addr":"127.0.0.1",
+      "Port":"17200",
+      "IntPort":"8080",
+      "Notes":"" 
+    },
+    "Repo":{
+      "Addr":"127.0.0.1",
+      "Port":"17300",
+      "IntPort":"8080",
+      "Notes":"" 
+    },
+    "DBOrgLogger":{
+      "Addr":"CLI-Prog: tim_cli_dborg_log",
+      "Port":"startApp.sh",
+      "IntPort":"",
+      "Notes":"configure DB-Properties via ./tim_cli_dborg_log/config/config.json " 
+    },
+    "DBOrgReceiver":{
+      "Addr":"CLI-Prog: tim_cli_dborg_receiver",
+      "Port":"startApp.sh",
+      "IntPort":"",
+      "Notes":"configure DB-Properties via ./tim_cli_dborg_receiver/config/config.json "
+    },
+    "DBOrgRepo":{
+      "Addr":"CLI-Prog: tim_cli_dborg_repo",
+      "Port":"startApp.sh",
+      "IntPort":"",
+      "Notes":"configure DB-Properties via ./tim_cli_dborg_repo/config/config.json "
+    },
+    "DBOrga":{
+      "Addr":"Service Container CLI-Prog: tim_cli_dbdef",
+      "Port":"ServiceName tim-dbdef",
+      "IntPort":"",
+      "Notes":"DB-Properties in Volume ./timFileSys/settings/configdborga.json. Start via docker exec -it <ContID> /bin/bash    <OPT1:> /cli/db/logger/main confLocation=/cli/config  <OPT2:> /cli/db/receiver/main confLocation=/cli/config <OPT3:> /cli/db/repo/main confLocation=/cli/config  "
+    },
+    "SysPortainer":{
+      "Addr":"127.0.0.1",
+      "Port":"9000",
+      "IntPort":"9000",
+      "Notes":"" 
+    }
+  }
