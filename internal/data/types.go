@@ -14,6 +14,7 @@ type ApplConfStruct struct {
 	Overview       ApplConfItemStruct
 	MockProducer   ApplConfItemStruct
 	Receiver       ApplConfItemStruct
+	Loadchannel    ApplConfItemStruct
 	Repo           ApplConfItemStruct
 	DBOrgLogger    ApplConfItemStruct
 	DBOrgReceiver  ApplConfItemStruct
