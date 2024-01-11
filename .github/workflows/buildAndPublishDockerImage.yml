@@ -38,7 +38,7 @@ jobs:
     - name: Configure git for private modules
       run: git config --global url."https://${{ github.actor }}:${{ env.TOKEN }}@github.com".insteadOf "https://github.com" # Zugriff auf die privaten GoLang Repos (falls man in seinem Service auf andere private GoLang Module zugreift, wie z.B. https://github.com/WestdeutscherRundfunkKoeln/tim-lib-stdout4go)
     - name: Build
-      run: CGO_ENABLED=0 GOOS=linux go build -o ./main ./cmd/tim_mobile_search/main.go
+      run: CGO_ENABLED=0 GOOS=linux go build -o ./main ./cmd/tim_web_show_apps/main.go
  
     - name: Test
       run: go test -v ./...
