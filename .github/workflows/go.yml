@@ -30,7 +30,7 @@ jobs:
 #    - name: Test
 #      run: go test -v ./...
     - name: Test with Go
-      run: go test -json > TestResults-1.20.txt
+      run: go test -v ./... -json > TestResults-1.20.txt
     - name: Upload Go test results
       uses: actions/upload-artifact@v3
       with:
