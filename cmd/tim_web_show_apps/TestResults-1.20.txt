@@ -1,0 +1,3 @@
+{"Time":"2024-01-11T13:56:46.004904982+01:00","Action":"start","Package":"github.com/BayramGuenesIvz/tim_web_show_apps/cmd/tim_web_show_apps"}
+{"Time":"2024-01-11T13:56:46.004963681+01:00","Action":"output","Package":"github.com/BayramGuenesIvz/tim_web_show_apps/cmd/tim_web_show_apps","Output":"?   \tgithub.com/BayramGuenesIvz/tim_web_show_apps/cmd/tim_web_show_apps\t[no test files]\n"}
+{"Time":"2024-01-11T13:56:46.004973081+01:00","Action":"skip","Package":"github.com/BayramGuenesIvz/tim_web_show_apps/cmd/tim_web_show_apps","Elapsed":0}

@@ -16,7 +16,10 @@ type ApplConfStruct struct {
 	Receiver       ApplConfItemStruct
 	Loadchannel    ApplConfItemStruct
 	Repo           ApplConfItemStruct
+	RepoChanges    ApplConfItemStruct
+	RuiRepo        ApplConfItemStruct
 	ELS            ApplConfItemStruct
+	ELSGui         ApplConfItemStruct
 	DBOrgLogger    ApplConfItemStruct
 	DBOrgReceiver  ApplConfItemStruct
 	DBOrgRepo      ApplConfItemStruct
