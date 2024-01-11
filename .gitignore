@@ -27,9 +27,7 @@ yarn-error.log*
 
 /.idea
 .idea
-main
+
 tim_web_show_apps.git
 ./tim_web_show_apps
 docker-entrypoint.sh
-*/main
-cmd/main
