@@ -24,7 +24,7 @@ func routerGinGonic() {
 	if err != nil {
 		return
 	}
-
+println("hello 20240111 1")
 	router := gin.New()
 
 	router.GET("/", amAliveHandler)
