@@ -25,7 +25,6 @@ jobs:
 
   # Build and push Docker image
   publish:
-    needs: [build-backend]
-  #  needs: [[build-backend, build-frontend]
+    needs: [build-backend]  #  needs: [[build-backend, build-frontend]
     uses: BayramGuenesIvz/bayramguenesivz-shared-workflows/.github/workflows/docker-build-push.yml@master
     secrets: inherit
