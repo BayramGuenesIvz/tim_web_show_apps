@@ -4,7 +4,7 @@ name: Build
 # Wann soll der Workflow getriggert werden
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "test" ]
  
 # Notwendige Berechtigungen -> https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
 permissions:
