@@ -8,7 +8,7 @@ on:
 jobs:
   # Building backend/server application
   build-backend:
-    uses: bayramguenesivz/am-shared-workflows/.github/workflows/go-build.yml@master
+    uses: BayramGuenesIvz/bayramguenesivz-shared-workflows/.github/workflows/go-build.yml@master
     with:
       run-tests: true
       go-file-path: "./cmd/tim_web_show_apps/main.go"
@@ -28,5 +28,5 @@ jobs:
   publish:
     needs: [build-backend]
   #  needs: [[build-backend, build-frontend]
-    uses: WestdeutscherRundfunkKoeln/am-shared-workflows/.github/workflows/docker-build-push.yml@main
+    uses: BayramGuenesIvz/bayramguenesivz-shared-workflows/.github/workflows/docker-build-push.yml@master
     secrets: inherit
