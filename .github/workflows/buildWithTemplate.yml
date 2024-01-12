@@ -8,7 +8,7 @@ on:
 jobs:
   # Building backend/server application
   build-backend:
-    uses: WestdeutscherRundfunkKoeln/am-shared-workflows/.github/workflows/go-build.yml@main
+    uses: bayramguenesivz/am-shared-workflows/.github/workflows/go-build.yml@master
     with:
       run-tests: true
       go-file-path: "./cmd/tim_web_show_apps/main.go"
