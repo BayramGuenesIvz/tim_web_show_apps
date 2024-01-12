@@ -14,7 +14,6 @@ jobs:
       go-file-path: "./cmd/tim_web_show_apps/main.go"
     secrets:
       PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-
   ## Building client application
   #build-frontend:
   #  uses: WestdeutscherRundfunkKoeln/am-shared-workflows/.github/workflows/npm-build.yml@main
