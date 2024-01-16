@@ -1,27 +1,10 @@
-FROM scratch as builder
+FROM ghcr.io/westdeutscherrundfunkkoeln/am-docker-alpine-base:3.19-latest
+#FROM ghcr.io/westdeutscherrundfunkkoeln/am-docker-oracle-ic-base:main-4
+#COPY main app/main
 
+COPY cmd/tim_web_show_apps/main app/main
+COPY web app/web
 
-COPY cmd/tim_web_show_apps/main /
-COPY web /web
+WORKDIR /app
 
-
-
-
-
-#===============================================================
-# develop stage
-#===============================================================
-FROM alpine as develop
-
-RUN apk update && \
-    apk add \
-    bash \
-    curl \
-    wget && \
-  rm -rf  /var/cache/apk/*  
-
-EXPOSE 8080
-
-COPY --from=builder / .
-
-CMD ["./main"]
+CMD ./main
