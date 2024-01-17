@@ -15,6 +15,7 @@ import (
 var ()
 
 func main() {
+	println()
 	routerGinGonic()
 }
 
