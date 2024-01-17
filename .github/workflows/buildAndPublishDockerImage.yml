@@ -4,7 +4,7 @@ name: Build
 # Wann soll der Workflow getriggert werden
 on:
   push:
-    branches: [ "test" ]
+    branches: [ "master" ]
  
 # Notwendige Berechtigungen -> https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
 permissions:
@@ -81,7 +81,8 @@ jobs:
   
   # Build and push Docker image
   publish:
-    needs: [build-backend]#, build-frontend]
+   # needs: [build-backend, build-frontend]
+    needs: [build-backend]
     runs-on: ubuntu-latest
     permissions:
       contents: write
