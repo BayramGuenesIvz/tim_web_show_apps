@@ -18,6 +18,7 @@ func main() {
 	println()
 	println()
 	routerGinGonic()
+	println()
 }
 
 func routerGinGonic() {
