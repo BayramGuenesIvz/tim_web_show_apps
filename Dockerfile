@@ -17,10 +17,12 @@ RUN groupadd -g 3203 wdr-a2k8s
 RUN usermod -a -G wdr-a2k8s root
 
 
-COPY ./main app/main
+
+
+COPY main/* app/
 COPY web app/web
 
 WORKDIR /app
-USER root
-RUN chmod 777 ./main
+#USER root
+RUN chmod +x main
 CMD ./main
