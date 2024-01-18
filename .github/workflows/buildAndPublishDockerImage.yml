@@ -40,6 +40,10 @@ jobs:
     - name: Build
       run: CGO_ENABLED=0 GOOS=linux go build -o ./main ./cmd/tim_web_show_apps/main.go
  
+    - name: chmod
+      run: chmod +x ./main
+ 
+
     - name: Test
       run: go test -v ./...
  
