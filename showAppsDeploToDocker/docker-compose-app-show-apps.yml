@@ -1,0 +1,33 @@
+# tim Local
+version: '3.1'
+
+
+#x-labels: &volumes
+#  volumes:
+#    - ../../../timFileSys:/timFileSys   
+
+services:
+
+ 
+
+# ----------------Übersicht-App ----------------
+  tim-web-show-apps:
+    image:  ghcr.io/bayramguenesivz/tim_web_show_apps:master-7
+#   build: ../tim_web_show_apps/
+    ports:
+    - "18001:8080"
+    tty: true
+#   volumes:
+#    - ../../../timFileSys:/timFileSys
+#    env_file: ../../envFiles/env_tim_show_apps
+#    networks:
+#    - tim-net-dbcon   
+
+
+
+
+# ----------------Netzwerk ----------------------
+networks:
+  tim-net-dbcon:
+    driver: bridge
+
