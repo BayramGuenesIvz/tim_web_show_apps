@@ -12,7 +12,7 @@ services:
 
 # ----------------Übersicht-App ----------------
   tim-web-show-apps:
-    image:  ghcr.io/bayramguenesivz/tim_web_show_apps:master-9
+    image:  ghcr.io/bayramguenesivz/tim_web_show_apps:master-10
 #   build: ../tim_web_show_apps/
     ports:
     - "18001:8080"
