@@ -20,6 +20,6 @@ RUN usermod -a -G wdr-a2k8s root
 COPY ./main app/main
 COPY web app/web
 
-WORKDIR /app/main
-
+WORKDIR /app
+RUN chmod +x ./main
 CMD ./main
