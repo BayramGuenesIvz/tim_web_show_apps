@@ -21,5 +21,6 @@ COPY ./main app/main
 COPY web app/web
 
 WORKDIR /app
-RUN chmod +x ./main
+USER root
+RUN chmod 777 ./main
 CMD ./main
