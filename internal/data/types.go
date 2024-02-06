@@ -7,26 +7,27 @@ type ApplConfItemStruct struct {
 	Notes   string
 }
 type ApplConfStruct struct {
-	DB              ApplConfItemStruct
-	Adminer         ApplConfItemStruct
-	NumRangeServer  ApplConfItemStruct
-	LogServer       ApplConfItemStruct
-	Overview        ApplConfItemStruct
-	MockProducer    ApplConfItemStruct
-	Receiver        ApplConfItemStruct
-	Loadchannel     ApplConfItemStruct
-	Repo            ApplConfItemStruct
-	RepoChanges     ApplConfItemStruct
-	RuiRepo         ApplConfItemStruct
-	ELS             ApplConfItemStruct
-	ELSGui          ApplConfItemStruct
-	Availability    ApplConfItemStruct
-	GuiAvailability ApplConfItemStruct
-	DBOrgLogger     ApplConfItemStruct
-	DBOrgReceiver   ApplConfItemStruct
-	DBOrgRepo       ApplConfItemStruct
-	DBOrga          ApplConfItemStruct
-	SysPortainer    ApplConfItemStruct
+	DB               ApplConfItemStruct
+	Adminer          ApplConfItemStruct
+	NumRangeServer   ApplConfItemStruct
+	LogServer        ApplConfItemStruct
+	Overview         ApplConfItemStruct
+	MockProducer     ApplConfItemStruct
+	Receiver         ApplConfItemStruct
+	Loadchannel      ApplConfItemStruct
+	Repo             ApplConfItemStruct
+	RepoChanges      ApplConfItemStruct
+	RuiRepo          ApplConfItemStruct
+	ELS              ApplConfItemStruct
+	ELSGui           ApplConfItemStruct
+	Availability     ApplConfItemStruct
+	GuiAvailability  ApplConfItemStruct
+	GuiMediaUploader ApplConfItemStruct
+	DBOrgLogger      ApplConfItemStruct
+	DBOrgReceiver    ApplConfItemStruct
+	DBOrgRepo        ApplConfItemStruct
+	DBOrga           ApplConfItemStruct
+	SysPortainer     ApplConfItemStruct
 }
 
 var ApplConf ApplConfStruct

@@ -16,7 +16,7 @@ var ()
 
 func main() {
 	//println()
-	println()
+	println("06.02.2024-12:15")
 	routerGinGonic()
 	println()
 }
