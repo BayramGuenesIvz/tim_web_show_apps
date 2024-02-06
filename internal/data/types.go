@@ -23,6 +23,7 @@ type ApplConfStruct struct {
 	Availability     ApplConfItemStruct
 	GuiAvailability  ApplConfItemStruct
 	GuiMediaUploader ApplConfItemStruct
+	MediaUploader    ApplConfItemStruct
 	DBOrgLogger      ApplConfItemStruct
 	DBOrgReceiver    ApplConfItemStruct
 	DBOrgRepo        ApplConfItemStruct
