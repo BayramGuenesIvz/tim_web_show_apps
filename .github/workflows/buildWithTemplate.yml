@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches-ignore:
-      - master
+      - test
 
 jobs:
   # Building backend/server application
