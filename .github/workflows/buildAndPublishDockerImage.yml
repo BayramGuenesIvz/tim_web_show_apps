@@ -33,7 +33,7 @@ jobs:
       #https://github.com/marketplace/actions/setup-go-environment
       uses: actions/setup-go@v4
       with:
-        go-version: '1.20'
+        go-version: '1.23'
  
     - name: Configure git for private modules
       run: git config --global url."https://${{ github.actor }}:${{ env.TOKEN }}@github.com".insteadOf "https://github.com" # Zugriff auf die privaten GoLang Repos (falls man in seinem Service auf andere private GoLang Module zugreift, wie z.B. https://github.com/WestdeutscherRundfunkKoeln/tim-lib-stdout4go)
