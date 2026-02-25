@@ -11,7 +11,7 @@ jobs:
     uses: WestdeutscherRundfunkKoeln/bg-am-shared-workflows/.github/workflows/go-build.yml@main
     with:
       run-tests: false
-      go-file-path: "./cmd/duplicate-checker/main.go"
+      go-file-path: "./cmd/tim_web_show_apps/main.go"
       go-version: "1.22"
       go-cgo: 1
       github-runner: "ubuntu-22.04"
