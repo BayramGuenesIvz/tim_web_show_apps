@@ -8,20 +8,30 @@ on:
 jobs:
   # Building backend/server application
   build-backend:
-    uses: BayramGuenesIvz/bayramguenesivz-shared-workflows/.github/workflows/go-build.yml@master
+    uses: WestdeutscherRundfunkKoeln/bg-am-shared-workflows/.github/workflows/go-build.yml@main
     with:
-      run-tests: true
-      go-file-path: "./cmd/tim_web_show_apps/main.go"
-  #  secrets:
-  #    PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-  ## Building client application
-  #build-frontend:
-  #  uses: WestdeutscherRundfunkKoeln/am-shared-workflows/.github/workflows/npm-build.yml@main
+      run-tests: false
+      go-file-path: "./cmd/duplicate-checker/main.go"
+      go-version: "1.22"
+      go-cgo: 1
+      github-runner: "ubuntu-22.04"
+    secrets: inherit
+  
+  #build-backend:
+  #  uses: BayramGuenesIvz/bayramguenesivz-shared-workflows/.github/workflows/go-build.yml@master
   #  with:
-  #    client-path: "${{ vars.CLIENT_PATH }}"
-  #    artifact-path: "./${{ vars.CLIENT_PATH }}"
-  #  secrets:
-  #    PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+  #    run-tests: true
+  #    go-file-path: "./cmd/tim_web_show_apps/main.go"
+  ##  secrets:
+  ##    PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+  ### Building client application
+  ##build-frontend:
+  ##  uses: WestdeutscherRundfunkKoeln/am-shared-workflows/.github/workflows/npm-build.yml@main
+  ##  with:
+  ##    client-path: "${{ vars.CLIENT_PATH }}"
+  ##    artifact-path: "./${{ vars.CLIENT_PATH }}"
+  ##  secrets:
+  ##    PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
   # Build and push Docker image
   publish:
