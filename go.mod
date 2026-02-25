@@ -2,7 +2,9 @@ module github.com/BayramGuenesIvz/tim_web_show_apps
 
 go 1.24.0
 
-toolchain go1.24.3
+//toolchain go1.24.3
+
+//toolchain go1.24.3
 
 require github.com/gin-gonic/gin v1.9.1
 
