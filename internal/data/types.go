@@ -24,6 +24,7 @@ type ApplConfStruct struct {
 	GuiAvailability  ApplConfItemStruct
 	GuiMediaUploader ApplConfItemStruct
 	MediaUploader    ApplConfItemStruct
+	DuplicateChecker ApplConfItemStruct
 	DBOrgLogger      ApplConfItemStruct
 	DBOrgReceiver    ApplConfItemStruct
 	DBOrgRepo        ApplConfItemStruct

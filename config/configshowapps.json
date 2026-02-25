@@ -101,6 +101,12 @@
     "IntPort":"8080",
     "Notes":"" 
   },
+   "DuplicateChecker":{
+    "Addr":"127.0.0.1",
+    "Port":"18090",
+    "IntPort":"8080",
+    "Notes":"" 
+  },  
   "DBOrga":{
     "Addr":"Service Container CLI-Prog: tim_cli_dbdef",
     "Port":"ServiceName tim-dbdef",
